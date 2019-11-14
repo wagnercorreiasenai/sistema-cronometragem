@@ -8,25 +8,25 @@
         <meta name="keywords" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="{{url('/')}}/favicon.ico" type="image/x-icon" />
 
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800" rel="stylesheet">
         
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-        <link rel="stylesheet" href="node_modules/icon-kit/dist/css/iconkit.min.css">
-        <link rel="stylesheet" href="node_modules/ionicons/dist/css/ionicons.min.css">
-        <link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-        <link rel="stylesheet" href="node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
-        <link rel="stylesheet" href="node_modules/jvectormap/jquery-jvectormap.css">
-        <link rel="stylesheet" href="node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
-        <link rel="stylesheet" href="node_modules/weather-icons/css/weather-icons.min.css">
-        <link rel="stylesheet" href="node_modules/c3/c3.min.css">
-        <link rel="stylesheet" href="node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
-        <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css">
-        <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
-        <link rel="stylesheet" href="dist/css/theme.min.css">
-        <script src="src/js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/icon-kit/dist/css/iconkit.min.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/ionicons/dist/css/ionicons.min.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/jvectormap/jquery-jvectormap.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/weather-icons/css/weather-icons.min.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/c3/c3.min.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/owl.carousel/dist/assets/owl.carousel.css">
+        <link rel="stylesheet" href="{{url('/')}}/node_modules/owl.carousel/dist/assets/owl.theme.default.css">
+        <link rel="stylesheet" href="{{url('/')}}/dist/css/theme.min.css">
+        <script src="{{url('/')}}/src/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
     <body>
@@ -61,7 +61,7 @@
                     <div class="sidebar-header">
                         <a class="header-brand" href="index.html">
                             <div class="logo-img">
-                               <img src="src/img/brand-white.svg" class="header-brand-img" alt="lavalite"> 
+                               <img src="{{url('/')}}/src/img/brand-white.svg" class="header-brand-img" alt="lavalite"> 
                             </div>
                             <span class="text">Cronometra</span>
                         </a>
@@ -74,10 +74,10 @@
                             <nav id="main-menu-navigation" class="navigation-main">
                                 <div class="nav-lavel">Menu principal</div>
                                 <div class="nav-item active">
-                                    <a href="index.html"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>
+                                    <a href="{{url('/')}}"><i class="ik ik-bar-chart-2"></i><span>Dashboard</span></a>
                                 </div>
                                 <div class="nav-item">
-                                    <a href="pages/navbar.html"><i class="ik ik-shopping-bag"></i><span>Produtos</span></a>
+                                    <a href="{{url('/')}}/produto"><i class="ik ik-shopping-bag"></i><span>Produtos</span></a>
                                 </div>
                                 <div class="nav-item">
                                     <a href="pages/navbar.html"><i class="ik ik-target"></i><span>Operações</span></a>
@@ -100,11 +100,9 @@
                     </div>
                 </div>
                 
-
                 <!-- Conteúdo -->
-                
+                @yield('conteudo')
                 <!-- Fim Conteúdo -->
-
                 
                 <footer class="footer">
                     <div class="w-100 clearfix">
@@ -204,25 +202,25 @@
         </div>
         
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script>window.jQuery || document.write('<script src="src/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-        <script src="node_modules/screenfull/dist/screenfull.js"></script>
-        <script src="node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
-        <script src="node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-        <script src="node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-        <script src="node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
-        <script src="node_modules/jvectormap/jquery-jvectormap.min.js"></script>
-        <script src="node_modules/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js"></script>
-        <script src="node_modules/moment/moment.js"></script>
-        <script src="node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>
-        <script src="node_modules/d3/dist/d3.min.js"></script>
-        <script src="node_modules/c3/c3.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{url('/')}}/src/js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+        <script src="{{url('/')}}/node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="{{url('/')}}/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="{{url('/')}}/node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+        <script src="{{url('/')}}/node_modules/screenfull/dist/screenfull.js"></script>
+        <script src="{{url('/')}}/node_modules/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="{{url('/')}}/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="{{url('/')}}/node_modules/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="{{url('/')}}/node_modules/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+        <script src="{{url('/')}}/node_modules/jvectormap/jquery-jvectormap.min.js"></script>
+        <script src="{{url('/')}}/node_modules/jvectormap/tests/assets/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="{{url('/')}}/node_modules/moment/moment.js"></script>
+        <script src="{{url('/')}}/node_modules/tempusdominus-bootstrap-4/build/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="{{url('/')}}/node_modules/d3/dist/d3.min.js"></script>
+        <script src="{{url('/')}}/node_modules/c3/c3.min.js"></script>
         <script src="{{url('/')}}/js/tables.js"></script>
-        <script src="js/widgets.js"></script>
-        <script src="js/charts.js"></script>
-        <script src="dist/js/theme.min.js"></script>
+        <script src="{{url('/')}}/js/widgets.js"></script>
+        <script src="{{url('/')}}/js/charts.js"></script>
+        <script src="{{url('/')}}/dist/js/theme.min.js"></script>
        
     </body>
 </html>
